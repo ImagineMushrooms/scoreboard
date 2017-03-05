@@ -1,6 +1,4 @@
 #!/usr/bin/python
-import numpy as np
-import csv
 print "Score tracker"
 player = "Player 1"
 player = raw_input("Enter player name: ")
@@ -20,7 +18,6 @@ while endgame == 0:
             delta_score = int(delta_score)
             score = score + delta_score
             print "end of turn ", str(n)
-            #print "score: ", str(score)
             n = n+1
             if score < 1:
                 endgame = 1
